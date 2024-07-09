@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css\style.css' %}">
+    <title>Hacking Service</title>
+    <style>
+        /* Example CSS for centering content */
+        body {
+            text-align: center;
+        }
+        .main-content {
+            margin: 0 auto;
+            width: 80%; /* Adjust width as needed */
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <h1 class="hack">hack<span class="logo"></span></h1>
+            <ul class="navbar">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'services' %}">Services</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="main-content">
+            <h3 class="aboyt">About Us:</h3>
+            <p class="text">
+                This is the website which provides hacking and development services.
+                You can use our services on the "Services" tab and view pricing.
+                Payment can be made in TON (Telegram Open Network) and Bitcoin.
+                We specialize in various services but cannot hack Telegram!
+                When you submit your email, we will contact you regarding payment.
+                We apologize for any inconvenience.
+            </p>
+            <div class="wht">
+                <h3>What we Do:</h3>
+                <p>
+                    We work for you, anytime, anywhere.
+                    Specializing in hacking and website development services.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+    <div id="footer">
+        <p>&copy; ablaze.hack-all 2024</p>
+    </div>
+</body>
+</html>

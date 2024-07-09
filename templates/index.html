@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Hacking Service</title>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <h1 class="hack">hack<span class="logo"></span></h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'services' %}">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="banner">
+        <div class="container">
+            <h1 class="h1tool">The Best <span class="tol">Hacking Service</span></h1>
+            <p class="par">The best service ever</p>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <p>&copy; ablaze.hack-all 2024</p>
+        </div>
+    </div>
+</body>
+</html>

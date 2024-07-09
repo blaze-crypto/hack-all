@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 50px;
+            position: relative;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .error-code {
+            font-size: 5em;
+            margin-bottom: 20px;
+        }
+        .error-image {
+            width: 300px;
+            margin-bottom: 30px;
+            filter: drop-shadow(0px 0px 15px #ff4500); /* Add a glowing effect */
+        }
+        .light {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #ff4500; /* Light color */
+            border-radius: 50%;
+            animation: flicker 1s infinite alternate; /* Create a flickering effect */
+        }
+        @keyframes flicker {
+            0% {
+                opacity: 0.5;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        .light1 {
+            top: 50px;
+            left: 20%;
+        }
+        .light2 {
+            top: 100px;
+            left: 60%;
+        }
+        .light3 {
+            top: 150px;
+            left: 80%;
+        }
+        a {
+            color: #ff4500; /* Orange color */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Lights -->
+    <div class="light light1"></div>
+    <div class="light light2"></div>
+    <div class="light light3"></div>
+
+    <h1>404 Not Found</h1>
+    <p>The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+    <img src="file:///D:/hack-all/hackall/assets/dino.png" alt="Error" class="error-image">
+    <p class="error-code">ERROR 404</p>
+    <p>Return to <a href="/">home page</a>.</p>
+</body>
+</html>
